@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Light Theme */
+body.light {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077cc;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffdd57;
+}
+
+.navbar button {
+  background: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* About Me Section */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0077cc;
+}
+
+.about-text-container {
+  max-width: 500px;
+  text-align: left;
+}
+
+#edit-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#edit-btn:hover {
+  background: #005fa3;
+}
+
+/* Extra highlight for editable mode */
+#about-text.editing {
+  border: 2px dashed #0077cc;
+  padding: 5px;
+  background: rgba(0, 119, 204, 0.1);
+}
+/* Home Section */
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9f9f9, #e6f0ff);
+  padding: 2rem;
+}
+
+body.dark .home-section {
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-content .highlight {
+  color: #0077cc;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #0077cc;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #005fa3;
+}
+

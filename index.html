@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <h1>Welcome to <span class="highlight">My Portfolio</span></h1>
+      <p>This is my personal portfolio showcasing my skills and projects.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Me Section (Editable) -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="pic.jpg" alt="Profile Picture" class="profile-pic">
+      <div class="about-text-container">
+        <p id="about-text" contenteditable="false">
+          Hi, I’m John Mark Dayondon 👋
+          I’m a passionate Web Developer who enjoys building creative, responsive, and user-friendly websites. 
+          I love working with HTML, CSS, JavaScript, and Java to turn ideas into interactive projects.
+        </p>
+        <button id="edit-btn">✏️ Edit</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧: johnmarkdayondon143@gmail.com</p>
+    <p>𝐟: John Mark Dayondon</p>
+    <p>☎: 09317860635</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
